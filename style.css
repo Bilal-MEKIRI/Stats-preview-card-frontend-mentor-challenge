@@ -16,7 +16,7 @@ body{
   display: flex;
   flex-direction: column;
   height: 600px;
-  max-width: 375px;
+  width: 375px;
   border-radius: 10px;
   overflow: hidden;
   background-color: #1b1938;
@@ -68,9 +68,42 @@ p{
 
 @media (min-width: 1440px){
   #main-container{
+    flex-direction: row;
+    width: 900px;
+    height: 300px;
     margin-left: auto;
     margin-right: auto;
-    margin-top: 5%;
+    margin-top: 15%;
+  }
+
+  #img-container{
+    width: 50%;
+    height: 100%;
+    order: 2;
+  }
+  
+  #text-container{
+    width: 50%;
+    height: 100%;
+    order: 1;
+    margin: 40px;
+  }
+
+  #first{
+    margin-top: 0px;
+    margin-bottom: 20px;
+  }
+
+  #stats{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 50px;
+  }
+
+  h2, p{
+    text-align: start;
+    margin: 0;
   }
 }
 
